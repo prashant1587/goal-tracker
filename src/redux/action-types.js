@@ -1,0 +1,13 @@
+export const EDIT_GOAL = "EDIT_GOAL";
+export const ADD_GOAL = "ADD_GOAL";
+export const REMOVE_GOAL = "REMOVE_GOAL";
+export const ADD_REMOVE_DATE = "ADD_REMOVE_DATE";
+export const REMOVE_DATE = "REMOVE_DATE";
+export const SELECT_GOAL = "SELECT_GOAL";
+export const SELECT_YEAR = "SELECT_YEAR";
+export const SELECT_MONTH = "SELECT_MONTH";
+export const DESELECT_YEAR = "DESELECT_YEAR";
+export const DESELECT_MONTH = "DESELECT_MONTH";
+export const LOAD_GOAL = "LOAD_GOAL";
+export const LOAD_DATE_SELECTION = "LOAD_DATE_SELECTION";
+export const LOAD_SELECTION = "LOAD_SELECTION";

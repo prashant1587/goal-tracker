@@ -1,0 +1,164 @@
+.app{
+    height: 100vh;
+    .header{
+        background-color: black;
+        height: 100px;
+        width: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+    .component-container{
+        display: flex;
+        flex: 1 0 0;
+        .side-panel{
+            width: 400px;
+            height: 100vh;
+            border-right: 1px solid #dbcece;
+            box-shadow: 0 0 5px 0;
+            .each-goal-container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                .goal-name-edit{
+                    width: 60%;
+                }
+                &.add-button {
+                    justify-content: center;
+                    cursor: pointer;
+                    border: 1px solid;
+                    padding: 2px;
+                    &.ripple {
+                        background-position: center;
+                        transition: background 0.8s;
+                    }
+                    &.ripple:hover {
+                        background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+                    }
+                    &.ripple:active {
+                        background-color: #6eb9f7;
+                        background-size: 100%;
+                        transition: background 0s;
+                    }
+                }
+                .add-goal-button{
+                    width: 30px;
+                    height: 30px;
+                    &.ripple {
+                        background-position: center;
+                        transition: background 0.8s;
+                    }
+                    &.ripple:hover {
+                        background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+                    }
+                    &.ripple:active {
+                        background-color: #6eb9f7;
+                        background-size: 100%;
+                        transition: background 0s;
+                    }
+                }
+            }
+        }
+        .calendar-container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            min-height: 200px;
+            align-items: center;
+            .calendar{
+                width: 600px;
+                .days {
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: relative;
+                    .date, .day-of-week {
+                        display: flex;
+                        max-width: 100px;
+                        height: 45px;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        width: 14.25%;
+                    }
+                    .date{
+                        position: relative;
+                        .close {
+                            position: absolute;
+                            width: 40px;
+                            height: 40px;
+                        }
+                        
+                        .close:hover {
+                            opacity: 1;
+                        }
+                        .close:hover {
+                            opacity: 1;
+                        }
+                        .close:before, .close:after {
+                            position: absolute;
+                            left: 18px;
+                            content: ' ';
+                            height: 40px;
+                            width: 4px;
+                            background-color: red;
+                        }
+                        .close:before {
+                            transform: rotate(45deg);
+                        }
+                        .close:after {
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+        .calendar-header{
+            .header-container{
+                display: flex;
+                justify-content: space-between;
+                width: 600px;
+                height: 40px;
+                align-items: center;
+                .calendar-btn.month-btn, .calendar-btn.year-btn{
+                    position: relative;
+                    width: 25%;
+                    background-color: #3ad2ff;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    #years, #months {
+                        z-index: 100;
+                        background: #ffffff;
+                        max-height: 200px;
+                        position: absolute;
+                        overflow: auto;
+                        width: 150px;
+                        border: 1px solid rgb(0,0,0);
+                        cursor: pointer;
+                        width: 400px;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    .dropdown-item{
+                        flex: 1 1 30%;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover {
+                            background-color: #eef1f1;;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
